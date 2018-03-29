@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -22,6 +23,14 @@
   font-size: large;
 }
 
+.landing {
+  color: white;
+  background-image: url("../src/images/1200px-Crotales1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
