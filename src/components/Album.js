@@ -90,11 +90,16 @@ class Album extends Component {
     this.setState({ currentTime: newTime });
   }
 
-  formatTime(e) {
-    var minutes = Math.floor(e / 60);
-    var seconds = Math.ceil(e % 60);
-    var formattedTime = String(minutes) + ":" + String(seconds);
-    if (isNaN(e)) {
+  formatTime(songLength) {
+    var minutes = Math.floor(songLength / 60);
+    var seconds = Math.floor(songLength % 60);
+    if (seconds < 10){
+      var formattedTime = String(minutes) + ":0" + String(seconds);
+    }
+    else {
+      formattedTime = String(minutes) + ":" + String(seconds);
+    }
+    if (isNaN(seconds)) {
       return "-:--";
     }
     else {
@@ -152,7 +157,7 @@ class Album extends Component {
           handleNextClick={() => this.handleNextClick()}
           handleTimeChange={(e) => this.handleTimeChange(e)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
-          formatTime={(e) => this.formatTime(e)}
+          formatTime={(songLength) => this.formatTime(songLength)}
         />
       </section>
     );
