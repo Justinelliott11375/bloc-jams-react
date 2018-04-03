@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
 }
 
 .App-logo {
@@ -8,13 +7,21 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App > header {
+  background-image: url("../src/images/gridHeader1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
+h1 {
+  margin: 0;
+  font-family: Bookman, serif;
+  color: #d9d9d9;
+}
 .App-title {
   font-size: 1.5em;
 }
@@ -23,14 +30,90 @@
   font-size: large;
 }
 
-.landing {
-  color: white;
-  background-image: url("../src/images/1200px-Crotales1.jpg");
+.library, .album {
+  background-image: url("../src/images/clothBackground1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 100%;
-  min-height: 100%;
+  color: #d9d9d9;
+  padding-top: 5em;
+  font-family: Bookman, serif;
 }
+
+.libraryAlbumInfo, .libraryAlbumInfo:visited, .libraryAlbumInfo:active, .libraryAlbumInfo:hover {
+  text-align: center;
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+#album-cover-art {
+  border-radius: 25px;
+}
+.landing {
+  color: #d9d9d9;
+  background-image: url("../src/images/clothBackground1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Bookman, serif;
+  padding-top: 2em;
+  padding-bottom: 55vh;
+}
+
+#landingLinkButton, #libraryLinkButton {
+  background-color: #333333;
+  border-radius: 5px;
+  color: white;
+  height: 3em;
+  width: 9em;
+  text-decoration: none;
+  font-family: Bookman, serif;
+  padding: 0;
+  font-size: 1em;
+  outline: 0;
+}
+#landingLinkButton:hover, #libraryLinkButton:hover {
+  background-color: #b3b3b3;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: black;
+}
+
+#landingLinkButton {
+  float: left;
+}
+
+#libraryLinkButton {
+  float: right;
+}
+
+#songNumberButtons, #previous, #next {
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  outline: 0;
+}
+
+#play-pause {
+  border-radius: 25px;
+  height: 40px;
+  width: 40px;
+  outline: 0;
+  padding-bottom: 0
+}
+
+#play-pause span {
+  font-size: 17px;
+}
+
+.player-bar {
+  padding-top: 10px;
+}
+
+#song-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
