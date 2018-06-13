@@ -8,7 +8,7 @@
 }
 
 .App > header {
-  background-image: url("../src/images/gridHeader1.png");
+  background-image: url("../src/images/geometricHeader1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 3em;
@@ -20,7 +20,7 @@
 h1 {
   margin: 0;
   font-family: Bookman, serif;
-  color: #d9d9d9;
+  color: #ffffff;
 }
 .App-title {
   font-size: 1.5em;
