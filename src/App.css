@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -35,8 +36,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   color: #d9d9d9;
-  padding-top: 5em;
+  padding-top: 2em;
   font-family: Bookman, serif;
+  padding-bottom: 20%;
 }
 
 .libraryAlbumInfo, .libraryAlbumInfo:visited, .libraryAlbumInfo:active, .libraryAlbumInfo:hover {
@@ -47,6 +49,7 @@ h1 {
 
 #album-cover-art {
   border-radius: 25px;
+  height: 15em;
 }
 .landing {
   color: #d9d9d9;
@@ -55,7 +58,7 @@ h1 {
   background-size: cover;
   font-family: Bookman, serif;
   padding-top: 2em;
-  padding-bottom: 55vh;
+  padding-bottom: 60%;
 }
 
 #landingLinkButton, #libraryLinkButton {
